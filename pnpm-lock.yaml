@@ -51,6 +51,12 @@ importers:
       '@unocss/nuxt':
         specifier: ^66.1.1
         version: 66.1.1(magicast@0.3.5)(postcss@8.5.3)(vite@6.3.5(@types/node@22.15.16)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))(webpack@5.99.8(esbuild@0.25.4))
+      '@unocss/preset-wind4':
+        specifier: ^66.1.1
+        version: 66.1.1
+      '@unocss/transformer-directives':
+        specifier: ^66.1.1
+        version: 66.1.1
       unocss:
         specifier: ^66.1.1
         version: 66.1.1(@unocss/webpack@66.1.1(webpack@5.99.8(esbuild@0.25.4)))(postcss@8.5.3)(vite@6.3.5(@types/node@22.15.16)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))

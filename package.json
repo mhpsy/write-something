@@ -30,6 +30,8 @@
     "@tailwindcss/vite": "^4.1.5",
     "@unocss/core": "^66.1.1",
     "@unocss/nuxt": "^66.1.1",
+    "@unocss/preset-wind4": "^66.1.1",
+    "@unocss/transformer-directives": "^66.1.1",
     "unocss": "^66.1.1"
   }
 }
