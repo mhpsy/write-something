@@ -4,7 +4,10 @@
   "private": true,
   "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39",
   "scripts": {
+    "web": "pnpm --filter @mh/web",
+    "ui": "pnpm --filter @mh/ui",
     "web:dev": "pnpm --filter @mh/web dev",
+    "ui:dev": "pnpm --filter @mh/ui dev",
     "web:build": "pnpm --filter @mh/web build",
     "web:postinstall": "pnpm --filter @mh/web postinstall",
     "web:lint": "pnpm --filter @mh/web lint",
@@ -20,5 +23,13 @@
     "vite": "^6.3.5",
     "vue": "^3.5.13",
     "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.336",
+    "@tailwindcss/postcss": "^4.1.5",
+    "@tailwindcss/vite": "^4.1.5",
+    "@unocss/core": "^66.1.1",
+    "@unocss/nuxt": "^66.1.1",
+    "unocss": "^66.1.1"
   }
 }

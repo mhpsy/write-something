@@ -1,12 +1,14 @@
-import postcss from './postcss.config'
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 
+  extends: [
+    '@mh/ui',
+  ],
   modules: [
     '@nuxt/eslint',
     '@nuxt/icon',
     '@nuxt/image',
+    '@unocss/nuxt',
   ],
   devtools: { enabled: true },
 
@@ -24,13 +26,6 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2024-11-01',
 
-  vite: {
-    plugins: [],
-    css: {
-      postcss,
-    },
-  },
-
   eslint: {
     config: {
       standalone: false,
@@ -40,8 +35,8 @@ export default defineNuxtConfig({
     },
   },
 
-  extends: [
-    '@mh/ui',
-  ],
+  unocss: {
+    nuxtLayers: true,
+  },
 
 })
