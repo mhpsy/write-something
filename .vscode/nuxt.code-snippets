@@ -1,0 +1,97 @@
+{
+  "Nuxt Page Template": {
+    "prefix": "npage",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "$2",
+      "</script>",
+      "",
+      "<template>",
+      "  <div>",
+      "    $1",
+      "  </div>",
+      "</template>",
+      "",
+      "<style scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "Create a new Nuxt page component"
+  },
+  "Nuxt Component Template": {
+    "prefix": "ncomp",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "defineProps<{",
+      "  $1",
+      "}>()",
+      "</script>",
+      "",
+      "<template>",
+      "  <div class=\"\">",
+      "    $2",
+      "  </div>",
+      "</template>",
+      "",
+      "<style scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "Create a new Nuxt component"
+  },
+  "Nuxt Layout Template": {
+    "prefix": "nlayout",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "</script>",
+      "",
+      "<template>",
+      "  <div class=\"\">",
+      "    <slot />",
+      "  </div>",
+      "</template>",
+      "",
+      "<style scoped>",
+      "</style>"
+    ],
+    "description": "Create a new Nuxt layout"
+  },
+  "Nuxt API Route": {
+    "prefix": "napi",
+    "body": [
+      "export default defineEventHandler(async (event) => {",
+      "  try {",
+      "    $1",
+      "    return {",
+      "      success: true,",
+      "      data: {}",
+      "    }",
+      "  } catch (error) {",
+      "    return {",
+      "      success: false,",
+      "      error: error.message",
+      "    }",
+      "  }",
+      "})"
+    ],
+    "description": "Create a new Nuxt API route handler"
+  },
+  "Nuxt Hook": {
+    "prefix": "nhook",
+    "body": [
+      "export const use$1 = () => {",
+      "  const $2 = ref($3)",
+      "",
+      "  const $4 = () => {",
+      "    $5",
+      "  }",
+      "",
+      "  return {",
+      "    $2",
+      "    $4",
+      "  }",
+      "}"
+    ],
+    "description": "Create a new Nuxt hook"
+  }
+}
