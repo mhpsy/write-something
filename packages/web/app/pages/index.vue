@@ -7,6 +7,9 @@
     <span class="text-2xl font-bold">
       index
     </span>
+    <Ui variant="primary">
+      123
+    </Ui>
     <div class="flex gap-2">
       <NuxtLink to="/show">
         show

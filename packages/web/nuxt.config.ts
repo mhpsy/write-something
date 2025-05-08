@@ -40,4 +40,8 @@ export default defineNuxtConfig({
     },
   },
 
+  extends: [
+    '@mh/ui',
+  ],
+
 })
