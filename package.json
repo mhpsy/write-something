@@ -9,6 +9,7 @@
     "web:dev": "pnpm --filter @mh/web dev",
     "ui:dev": "pnpm --filter @mh/ui dev",
     "web:build": "pnpm --filter @mh/web build",
+    "ui:build": "pnpm --filter @mh/ui build",
     "web:postinstall": "pnpm --filter @mh/web postinstall",
     "web:lint": "pnpm --filter @mh/web lint",
     "lint": "eslint --fix ."

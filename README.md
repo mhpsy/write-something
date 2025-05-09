@@ -1,5 +1,7 @@
 # Nuxt Minimal Starter
 
+NITRO_PORT=8080 node packages/web/.output/server/index.mjs
+
 https://github.com/nuxt/content/issues/3104#issuecomment-2650411617
 需要运行一下 pnpm approve-builds
 

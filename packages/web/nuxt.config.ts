@@ -6,7 +6,6 @@ export default defineNuxtConfig({
   ],
   modules: [
     '@nuxt/eslint',
-    '@nuxt/icon',
     '@nuxt/image',
     '@unocss/nuxt',
   ],
@@ -38,5 +37,4 @@ export default defineNuxtConfig({
   unocss: {
     nuxtLayers: true,
   },
-
 })
