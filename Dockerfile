@@ -21,11 +21,8 @@ RUN pnpm i
 # Copy the entire project
 COPY . ./
 
-# Build UI package first
-RUN pnpm run ui:build
-
-# Debug: Show the content of uno.config.mjs
-RUN cat /app/packages/web/.nuxt/uno.config.mjs
+# this is for regenerating the nuxt config
+RUN pnpm i
 
 # Build the project
 RUN pnpm run web:build
