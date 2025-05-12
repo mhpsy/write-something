@@ -21,8 +21,8 @@ RUN pnpm i
 # Copy the entire project
 COPY . ./
 
-# this is for regenerating the nuxt config
-RUN pnpm i
+# prepare nuxt
+RUN pnpm -r exec nuxt prepare
 
 # Build the project
 RUN pnpm run web:build
